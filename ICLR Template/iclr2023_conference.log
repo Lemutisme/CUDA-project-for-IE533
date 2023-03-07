@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.31)  7 MAR 2023 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.31)  7 MAR 2023 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -286,8 +286,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip63
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-0.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+9.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -296,27 +296,28 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box52
 )
-No file iclr2023_conference.aux.
+(./iclr2023_conference.aux)
 \openout1 = `iclr2023_conference.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
@@ -331,7 +332,7 @@ LaTeX Font Info:    ... okay on input line 50.
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks23
 )
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 39.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -344,80 +345,58 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
+ (./iclr2023_conference.out) (./iclr2023_conference.out)
 \@outlinefile=\write3
 \openout3 = `iclr2023_conference.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/ptm/m/sc/17.28 GPU-accelerated Al-go-rithm on solv-ing
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
-6.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 4
+3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 6
-9.
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 4
+3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+ [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-
-LaTeX Warning: Reference `gen_inst' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Reference `headings' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Reference `others' on page 1 undefined on input line 107.
-
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-
-LaTeX Warning: Reference `others' on page 2 undefined on input line 127.
-
-
-Package natbib Warning: Citation `Hinton06' on page 2 undefined on input line 1
-63.
-
-
-Package natbib Warning: Citation `Bengio+chapter2007' on page 2 undefined on in
-put line 165.
-
-[2]
-
-LaTeX Warning: Reference `sample-table' on page 3 undefined on input line 207.
-
-
-Package natbib Warning: Citation `goodfellow2016deep' on page 3 undefined on in
-put line 231.
-
+] [2]
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
-44.
+48.
+
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 244.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 248.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 244.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 248.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <5> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 244.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 248.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -428,38 +407,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-No file iclr2023_conference.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-[6] (./iclr2023_conference.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `iclr2023_conference.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `iclr2023_conference.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8449CFF0DA8E1E6AA3C82E5BBF671073;2689.
+(./iclr2023_conference.bbl) [6] [7] (./iclr2023_conference.aux)
+Package rerunfilecheck Info: File `iclr2023_conference.out' has not changed.
+(rerunfilecheck)             Checksum: 8449CFF0DA8E1E6AA3C82E5BBF671073;2689.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 257 ({)
+### simple group (level 1) entered at line 261 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10377 strings out of 478268
- 153327 string characters out of 5846347
- 465912 words of memory out of 5000000
- 28403 multiletter control sequences out of 15000+600000
+ 10420 strings out of 478268
+ 154076 string characters out of 5846347
+ 466218 words of memory out of 5000000
+ 28433 multiletter control sequences out of 15000+600000
  505254 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,17n,75p,241b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,17n,75p,335b,407s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -479,10 +442,10 @@ ive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/20
 22/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on iclr2023_conference.pdf (6 pages, 189448 bytes).
+Output written on iclr2023_conference.pdf (7 pages, 196522 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
