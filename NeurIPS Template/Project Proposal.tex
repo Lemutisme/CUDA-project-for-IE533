@@ -9,13 +9,13 @@
 
 % to compile a preprint version, e.g., for submission to arXiv, add add the
 % [preprint] option:
-%     \usepackage[preprint]{neurips_2020}
+\usepackage[preprint]{neurips_2020}
 
 % to compile a camera-ready version, add the [final] option, e.g.:
 %     \usepackage[final]{neurips_2020}
 
 % to avoid loading the natbib package, add option nonatbib:
-\usepackage[preprint]{neurips_2020}
+%      \usepackage[nonatbib]{neurips_2020}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
@@ -25,6 +25,7 @@
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
+\usepackage{verbatim}
 
 \title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Proposal}
 
@@ -88,6 +89,29 @@
   must be limited to one paragraph.
 \end{abstract}
 
+\section{Introduction}
+
+Stochastic shortest path is a problem in which we need to find the shortest path from a given start node to a goal node in a graph, where the edge weights are not deterministic but instead are random variables. This problem is commonly used in many applications, such as robotics, transportation, and network routing.
+
+Regular shortest path algorithms, such as Dijkstra's algorithm or the A* algorithm, assume that the edge weights in a graph are deterministic and known in advance. These algorithms work well when the edge weights are fixed and do not change over time. However, in many real-world applications, the edge weights are not fixed but instead are subject to randomness and uncertainty. For example, in transportation networks, the travel time between two locations can vary depending on traffic conditions, weather, accidents, etc. Similarly, in robotic navigation, the cost of moving from one location to another can depend on sensor readings, terrain features, obstacles, etc. In such scenarios, regular shortest path algorithms may not be appropriate as they do not take into account the randomness and uncertainty of the edge weights. Stochastic shortest path algorithms, on the other hand, explicitly model the probabilistic nature of the edge weights and aim to find the path with the lowest expected cost.
+
+The stochastic shortest path problem is a challenging problem in stochastic optimization, and its solution requires a combination of mathematical and computational techniques. The need for using GPUs, particularly CUDA, to speed up the stochastic shortest path algorithm depends on various factors such as the size of the graph, the complexity of the edge weight distributions, and the available computing resources. In general, stochastic shortest path algorithms involve computations with matrices and vectors, which can be computationally intensive for large graphs. GPUs, with their massively parallel architecture and high memory bandwidth, can accelerate these computations significantly, leading to faster computation times. Moreover, if the edge weight distributions are complex and involve high-dimensional probability distributions, such as multivariate normal or mixture distributions, then the computations involved in the algorithm may be even more demanding. In such cases, GPUs can provide significant speedups compared to CPU-based implementations.
+
+\section{Literature Review}
+
+\subsection{Prior State of the Art}
+
+\section{Proposed work}
+
+\subsection{Tasks, Data and Testing}
+
+\subsection{Milestons}
+
+\subsection{Expected results}
+
+
+
+\begin{comment}
 \section{Submission of papers to NeurIPS 2020}
 
 NeurIPS requires electronic submissions.  The electronic submission site is
@@ -395,6 +419,8 @@ More information about this disclosure can be found at: \url{https://neurips.cc/
 Do {\bf not} include this section in the anonymized submission, only in the final paper. You can use the \texttt{ack} environment provided in the style file to autmoatically hide this section in the anonymized submission.
 \end{ack}
 
+\end{comment} 
+
 \section*{References}
 
 References follow the acknowledgments. Use unnumbered first-level heading for
@@ -403,6 +429,8 @@ consistent. It is permissible to reduce the font size to \verb+small+ (9 point)
 when listing the references.
 {\bf Note that the Reference section does not count towards the eight pages of content that are allowed.}
 \medskip
+
+
 
 \small
 
