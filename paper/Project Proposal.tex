@@ -139,18 +139,18 @@ problem to devise a policy that leads from an origin to a destination with minim
 Further works have been done to expand the ecosystem of SSP problem by proposing new concepts and frameworks [5, 6]. 
 In addition, SSP is defined as an instance of a Markov Decision Process. 
 
-On Markov Decision Processes with Parallel Algorithm, Archibald, T. W. et al\. looked at serial value iteration algorithms for Markov decision processes and develops efficient parallel alternatives [7]. 
-Jóhannsson, Á.Þ. et al\. introduced two CUDA-based implementations of the Value Iteration algorithm: Block Divided Iteration and Result Divided Iteration 
+On Markov Decision Processes with Parallel Algorithm, Archibald, T. W. et al. looked at serial value iteration algorithms for Markov decision processes and develops efficient parallel alternatives [7]. 
+Jóhannsson, Á.Þ. et al. introduced two CUDA-based implementations of the Value Iteration algorithm: Block Divided Iteration and Result Divided Iteration 
 and showed a substantial performance improvement for the parallel algorithms compared to a sequential implementation 
 on a CPU [12]. Ruiz and Hernandez formulated a MDP solver based on the Value Iteration algorithm that uses matrix 
 multiplications. This allows us to leverage GPUs to produce interactive obstacle-free paths in the form of an Optimal Policy [10]. 
 
-Ortega-Arranz, H. et al\. presented a GPU SSSP algorithm implementation  significantly sped up the computation of the SSSP. They also enhanced the GPU 
+Ortega-Arranz, H. et al. presented a GPU SSSP algorithm implementation  significantly sped up the computation of the SSSP. They also enhanced the GPU 
 algorithm implementation using proper choice of threadblock size and the modification of the GPU L1 cache memory state of 
-NVIDIA devices [11]. Sapio et al\. introduced two new MDP solvers for embedded 
+NVIDIA devices [11]. Sapio et al. introduced two new MDP solvers for embedded 
 systems: Sparse Value Iteration (SVI), which operates on small, single-threaded CPU platforms using sparse matrix methods, 
 and Sparse Parallel Value Iteration (SPVI), which takes advantage of embedded graphics processing units (GPUs) to increase 
-performance on more advanced embedded systems [8]. Steimle et al\. developed exact and fast approximation methods with error bounds 
+performance on more advanced embedded systems [8]. Steimle et al. developed exact and fast approximation methods with error bounds 
 for Multi-model Markov decision process (MMDP), which generates a single policy maximizing performance over all models. 
 This approach allows the decision maker to trade-off conflicting data sources while creating a policy of the same complexity 
 for models that consider only one data source [9].

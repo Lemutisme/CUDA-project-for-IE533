@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1678404074 "/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Project Proposal.tex" "Project Proposal.pdf" "Project Proposal" 1678404074 0
-  "/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Project Proposal.tex" 1678404073 27023 4cec3ff59d9b53e7e412b0208060256d ""
+["pdflatex"] 1678404406 "/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Project Proposal.tex" "Project Proposal.pdf" "Project Proposal" 1678404407 0
+  "/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Project Proposal.tex" 1678404406 27018 e7fc777742fa096174940fc125d271ca ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -86,9 +86,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1678390650 4623355 58034c3eb7ddf7eacc726a83d01e26d2 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678390788 7883460 02d0ebd29192a8fa2c560a4d94f0f215 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Project Proposal.aux" 1678404074 1530 c0abd24f27f6fe27cad1ceaa7afdf34c "pdflatex"
-  "Project Proposal.out" 1678404074 812 18e4951056e6c4ab37ee781bef1f0e89 "pdflatex"
-  "Project Proposal.tex" 1678404073 27023 4cec3ff59d9b53e7e412b0208060256d ""
+  "Project Proposal.aux" 1678404407 1530 c0abd24f27f6fe27cad1ceaa7afdf34c "pdflatex"
+  "Project Proposal.out" 1678404407 812 18e4951056e6c4ab37ee781bef1f0e89 "pdflatex"
+  "Project Proposal.tex" 1678404406 27018 e7fc777742fa096174940fc125d271ca ""
   "neurips_2020.sty" 1678227523 11308 33fa6948195904410daa8773ea6feb42 ""
   (generated)
   "Project Proposal.aux"
