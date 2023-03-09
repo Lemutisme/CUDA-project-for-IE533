@@ -91,22 +91,99 @@
 
 \section{Introduction}
 
-Stochastic shortest path is a problem in which we need to find the shortest path from a given start node to a goal node in a graph, where the edge weights are not deterministic but instead are random variables. This problem is commonly used in many applications, such as robotics, transportation, and network routing.
+Stochastic shortest path is a problem in which we need to find the shortest path from
+a given start node to a goal node in a graph, where the edge weights are not deterministic 
+but instead are random variables. This problem is commonly used in many applications, 
+such as robotics, transportation, and network routing.
 
-Regular shortest path algorithms, such as Dijkstra's algorithm or the A* algorithm, assume that the edge weights in a graph are deterministic and known in advance. These algorithms work well when the edge weights are fixed and do not change over time. However, in many real-world applications, the edge weights are not fixed but instead are subject to randomness and uncertainty. For example, in transportation networks, the travel time between two locations can vary depending on traffic conditions, weather, accidents, etc. Similarly, in robotic navigation, the cost of moving from one location to another can depend on sensor readings, terrain features, obstacles, etc. In such scenarios, regular shortest path algorithms may not be appropriate as they do not take into account the randomness and uncertainty of the edge weights. Stochastic shortest path algorithms, on the other hand, explicitly model the probabilistic nature of the edge weights and aim to find the path with the lowest expected cost.
+Regular shortest path algorithms, such as Dijkstra's algorithm or the A* algorithm, 
+assume that the edge weights in a graph are deterministic and known in advance. 
+These algorithms work well when the edge weights are fixed and do not change over time. 
+However, in many real-world applications, the edge weights are not fixed but instead are 
+subject to randomness and uncertainty. For example, in transportation networks, the travel 
+time between two locations can vary depending on traffic conditions, weather, accidents, etc. 
+Similarly, in robotic navigation, the cost of moving from one location to another can depend 
+on sensor readings, terrain features, obstacles, etc. In such scenarios, regular shortest path 
+algorithms may not be appropriate as they do not take into account the randomness and uncertainty 
+of the edge weights. Stochastic shortest path algorithms, on the other hand, explicitly model the 
+probabilistic nature of the edge weights and aim to find the path with the lowest expected cost.
 
-The stochastic shortest path problem is a challenging problem in stochastic optimization, and its solution requires a combination of mathematical and computational techniques. The need for using GPUs, particularly CUDA, to speed up the stochastic shortest path algorithm depends on various factors such as the size of the graph, the complexity of the edge weight distributions, and the available computing resources. In general, stochastic shortest path algorithms involve computations with matrices and vectors, which can be computationally intensive for large graphs. GPUs, with their massively parallel architecture and high memory bandwidth, can accelerate these computations significantly, leading to faster computation times. Moreover, if the edge weight distributions are complex and involve high-dimensional probability distributions, such as multivariate normal or mixture distributions, then the computations involved in the algorithm may be even more demanding. In such cases, GPUs can provide significant speedups compared to CPU-based implementations.
+The stochastic shortest path problem is a challenging problem in stochastic optimization, 
+and its solution requires a combination of mathematical and computational techniques. 
+The need for using GPUs, particularly CUDA, to speed up the stochastic shortest path algorithm 
+depends on various factors such as the size of the graph, the complexity of the edge weight distributions, 
+and the available computing resources. In general, stochastic shortest path algorithms involve computations 
+with matrices and vectors, which can be computationally intensive for large graphs. GPUs, 
+with their massively parallel architecture and high memory bandwidth, can accelerate these 
+computations significantly, leading to faster computation times. Moreover, if the edge weight distributions 
+are complex and involve high-dimensional probability distributions, such as multivariate normal or mixture distributions, 
+then the computations involved in the algorithm may be even more demanding. In such cases, 
+GPUs can provide significant speedups compared to CPU-based implementations.
 
 \section{Literature Review}
 
-Prior State of the Art
+There have been plenty of algorithms innovated to resolve the general shortest path problem in the past decades. 
+Gallo and Pallottino discussed eight algorithms for the shortest path problem and compared their performances 
+with various data structures [1]. To further increase the computational efficiency, Crauser et al\. proposed a 
+parallelized version of the Dijkstra's algorithm [2]. Even though the shortest path problem can be applied to 
+many areas like road networks and social media, it is less generic to be applied to some other real life problems 
+such as robotics, autonomous driving, and network routing.  
+
+Bertsekas and Tsitsiklis generalized the shortest path problem and first introduced the idea of stochastic shortest path (SSP) 
+problem in 1991 [3]. They further extended the corresponding theory of Markovian decision problems 
+by removing the assumptions that cost can either be all positive or all negative. Building on top 
+of that, Polychronopoulos and Tsitsiklis developed a dynamic programming algorithm to resolve a SSP 
+problem to devise a policy that leads from an origin to a destination with minimal expected cost (4). 
+Further works have been done to expand the ecosystem of SSP problem by proposing new concepts and frameworks [5, 6]. 
+In addition, SSP is defined as an instance of a Markov Decision Process. 
+
+On Markov Decision Processes with Parallel Algorithm, Archibald, T. W. et al\. looked at serial value iteration algorithms for Markov decision processes and develops efficient parallel alternatives [7]. 
+Jóhannsson, Á.Þ. et al\. introduced two CUDA-based implementations of the Value Iteration algorithm: Block Divided Iteration and Result Divided Iteration 
+and showed a substantial performance improvement for the parallel algorithms compared to a sequential implementation 
+on a CPU [12]. Ruiz and Hernandez formulated a MDP solver based on the Value Iteration algorithm that uses matrix 
+multiplications. This allows us to leverage GPUs to produce interactive obstacle-free paths in the form of an Optimal Policy [10]. 
+
+Ortega-Arranz, H. et al\. presented a GPU SSSP algorithm implementation  significantly sped up the computation of the SSSP. They also enhanced the GPU 
+algorithm implementation using proper choice of threadblock size and the modification of the GPU L1 cache memory state of 
+NVIDIA devices [11]. Sapio et al\. introduced two new MDP solvers for embedded 
+systems: Sparse Value Iteration (SVI), which operates on small, single-threaded CPU platforms using sparse matrix methods, 
+and Sparse Parallel Value Iteration (SPVI), which takes advantage of embedded graphics processing units (GPUs) to increase 
+performance on more advanced embedded systems [8]. Steimle et al\. developed exact and fast approximation methods with error bounds 
+for Multi-model Markov decision process (MMDP), which generates a single policy maximizing performance over all models. 
+This approach allows the decision maker to trade-off conflicting data sources while creating a policy of the same complexity 
+for models that consider only one data source [9].
 
 \section{Proposed work}
 
-\subsection{Tasks, Data and Testing}
+\subsection{Tasks}
+
+In Task 1, we will spend sometime to explore the mathematical theories as well as algorithms 
+relevant to stochastic shortest path and markov decision processes in greater details. 
+By diving into these topics, we will be able to better understand the underlying principles 
+that govern these processes and apply this knowledge to real-world situations. 
+
+For Task 2, in order to solve the stochastic shortest path problem, we can reproduce various 
+existing algorithms. These algorithms can be implemented using a CPU as a baseline scenario. 
+By utilizing these techniques, we can efficiently identify the optimal path in a given graph, 
+even when the graph has stochasticity. Additionally, we may consider implementing these algorithms 
+on GPUs especially using CUDA in order to further optimize the solution.
+
+\subsection{Data}
+
+We will evaluate our method on a list of infinite-horizon Multi-model Markov Decision Processes (MMDPs). 
+These MMDPs are test instances generated by using the codes provided by University of Michigan-Deep Blue Data. 
+We will use their codes to generate three sets of MMDPs, each corresponding to different medical decision-making problems. 
+These problems include the initiation of HIV therapy, a machine maintenance problem, and a set of randomly constructed instances. 
+A more detailed description of the data under each problem can be found online. 
+
+\begin{center}
+  \url{https://deepblue.lib.umich.edu/data/concern/data_sets/t722h899p}
+\end{center}
 
 \subsection{Milestons}
-Table~\ref{Milestons}
+
+Referring to the schedule Table~\ref{Milestons}, our milestone is shown above.
+
 
 \begin{table}
   \caption{Milestons}
@@ -128,11 +205,15 @@ Table~\ref{Milestons}
   \end{tabular}
 \end{table}
 
-\subsection{Expected results}
+\subsection{Testing and Expected results}
 
+We will choose CUDA enabled NVIDIA GPU and C++ to realize the paralleled computations and use python 
+to take care of all other programming works including data preprocessing and pipeline construction. 
+We will test our method compared to the baseline model using CPU counterparts in terms of speed. 
+It is important to choose the appropriate method or algorithm for the specific problem at hand and to 
+carefully analyze the results to ensure that the solution is accurate and effective. 
 
-
-%\begin{comment}
+\begin{comment}
 \section{Submission of papers to NeurIPS 2020}
 
 NeurIPS requires electronic submissions.  The electronic submission site is
@@ -440,10 +521,10 @@ More information about this disclosure can be found at: \url{https://neurips.cc/
 Do {\bf not} include this section in the anonymized submission, only in the final paper. You can use the \texttt{ack} environment provided in the style file to autmoatically hide this section in the anonymized submission.
 \end{ack}
 
-%\end{comment} 
+\end{comment} 
 
 \section*{References}
-\ref{reference}
+%\ref{reference}
 \small
 
 [1] Gallo, G.,\ \& Pallottino, S.\ (1988). Shortest path algorithms. {\it Annals 
