@@ -26,6 +26,7 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{verbatim}
+\usepackage{algorithm}
 
 \title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Proposal}
 
@@ -214,6 +215,33 @@ to take care of all other programming works including data preprocessing and pip
 We will test our method compared to the baseline model using CPU counterparts in terms of speed. 
 It is important to choose the appropriate method or algorithm for the specific problem at hand and to 
 carefully analyze the results to ensure that the solution is accurate and effective. 
+
+\section{Methodology}
+Due to the combinatorial nature of the problem and randomness of the cost variables, solving the SSP problem can
+be computationally difficult. However, a number of approaches, including dynamic programming, modified 
+Dijastra's algorithm, and Monte Carlo simulation-based methods, have been suggested to solve the problem.
+Conventionally, these methods use discretized versions of the random cost distributions to determine the
+shortest path with minimum expected cost. 
+
+\subsection{Dynamic Programming}
+Dynamic programming [4] is a method commonly used to solve SSP problem. The have been many variations of 
+dynamic programming algorithms targeting different types of SSP problems such as value iteration, policy iteration,
+and Q-learning. In our case, we define the dynamic programming algorithm as follows. Before 
+we delve into the pseudocodes, let us define the value function $V(i)$ using Bellman equation [].
+\begin{equation}
+  V(i) = min c(i,j) + \mathbb{E}[V(j)]
+\end{equation}
+where the minimum is taken over all outgoing edges (i,j) from node i to j, and $\mathbb{E}[V(j)]$ is the expectted cost of the 
+shortest path from node j to the terminal node t. 
+
+\begin{algorithm}[H]
+
+\caption{Stochastic Shortest Path Using Dynamic Programming}
+\end{algorithm}
+
+\subsection{Modified Dijkstra's Algorithm}
+
+
 
 \begin{comment}
 \section{Submission of papers to NeurIPS 2020}
