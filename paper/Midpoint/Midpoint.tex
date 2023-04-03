@@ -229,7 +229,7 @@ dynamic programming algorithms targeting different types of SSP problems such as
 and Q-learning. In our case, we define the dynamic programming algorithm as follows. Before 
 we delve into the pseudocodes, let us define the value function $V(i)$ using Bellman equation [].
 \begin{equation}
-  V(i) = min c(i,j) + \mathbb{E}[V(j)]
+  V(i) = minc(i,j) + \mathbb{E}[V(j)]
 \end{equation}
 where the minimum is taken over all outgoing edges (i,j) from node i to j, and $\mathbb{E}[V(j)]$ is the expectted cost of the 
 shortest path from node j to the terminal node t. 
