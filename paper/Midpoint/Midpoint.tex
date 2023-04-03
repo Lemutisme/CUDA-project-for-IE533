@@ -27,6 +27,7 @@
 \usepackage{microtype}      % microtypography
 \usepackage{verbatim}
 \usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{amsmath}
 
 \title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Midpoint}
@@ -268,12 +269,120 @@ where the minimum is taken over all outgoing edges (i,j) from node i to j, and $
 shortest path from node j to the terminal node t. 
 
 \begin{algorithm}[H]
-
-\caption{Stochastic Shortest Path Using Dynamic Programming}
-\end{algorithm}
+  \caption{Stochastic Shortest Path Using Dynamic Programming}
+  \begin{algorithmic}[1]
+  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, discretized_costs $c$, probability distribution function $p:E\rightarrow[0,1]$
+  \State \textbf{Output:} Shortest expected path from $s$ to $t$, min_expected_cost
+  \State
+  \Procedure{SSP_DP}{$G,s,t,c,p$}
+  \State \textbf{Initialization:}
+  \For{$v \in V$}
+  \State $V(v) \gets None$
+  \EndFor
+  
+  \State \text{min_expected_c} $\gets$ \text{DP_Helper(G, s, t, c, p)}
+  \State \text{path} $\gets$ \text{Reconstruction_Path(G, s, t, c, p, V)}
+  
+  \State \textbf{return} min_expected_c, path
+  \EndProcedure
+  \State
+  \Procedure{DP_Helper}(G, u, t, c, p, V)
+  \If{$u == t$}
+  \State \textbf{return} 0
+  \EndIf
+  \If {$V[u] != None$}
+  \State \textbf{return} V[u]
+  \EndIf
+  \State
+  \State \textbf{Initialize:} min_expected_c $\gets \infty$
+  \For{\text{neighbor v of u } $\in G$}
+  \State \text{expected_cost[u][v]} $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
+  \State \text{subproblem_cost} $\gets$ \text{DP_Helper(G, v, t, c, p, V)}
+  \State \text{total_expected_cost} $\gets$ expected_cost[u][v] +  \text{subproblem_cost}
+  \If{total_expected_cost $<$ min_expected_c}
+  \State \text{min_expected_c} $\gets$ total_expected_cost
+  \EndIf
+  \State
+  \State V[u] $\gets$ min_expected_cost
+  \State \textbf{return} min_expected_cost
+  \EndFor
+  
+  \EndProcedure
+  \State
+  \Procedure{Reconstruct_Path}(G, u, t, c, p, V):
+  \State \textbf{Initialize:} an empty path p
+  \State current_node $\gets$ u
+  \State
+  \While{current_node $!=$ t}
+  \For{neighbor v of current_node that minimize the total expected cost}
+  \State \text{expected_cost[\text{current_node}][v]} $\gets \sum_{(\text{current_node},v) \in E}c[\text{current_node}][v]\times p[\text{current_node}][v]$
+  \State \text{total_expected_cost} $\gets$ expected_cost[\text{current_node}][v] + V[v]  
+  \State append v to p
+  \State current_node $\gets$ v
+  \EndFor
+  \EndWhile
+  \State \textbf{return} p
+  \EndProcedure
+  \end{algorithmic}
+  \end{algorithm}
 
 \subsection{Modified Dijkstra's Algorithm}
 
+\begin{algorithm}[H]
+  \caption{SPP_Dijkstra}
+  \begin{algorithmic}[1]
+  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, discretized_costs $c$, probability distribution function $p:E\rightarrow[0,1]$
+  \State \textbf{Output:} Shortest expected path from $s$ to $t$
+  \State
+  
+  \Procedure{SSP_Dijkstra}{$G,s,t,c,p$}
+  \State \textbf{Initialize:} an empty priority queue Q, an empty path dictionary P, expected cost array E_costs
+  \For{$v \in $ E_costs}
+  \State E_costs $ \gets \infty$
+  \EndFor
+  \State E_costs[s] $\gets$ 0
+  \State Insert (s,0) into Q
+  \State
+  \While{Q is not empty}
+  \State u $\gets$ Q.pop()
+  \If{$u==t$}
+  \State \textbf{break}
+  \EndIf
+  \State
+  \For{neighbor v of u in G}
+  \State expected_cost[u][v] $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
+  \State new_E_cost = E_costs[u] + expected_cost[u][v]
+  
+  \If{new_E_cost $<$ E_costs[v]}
+  \State E_costs[v] = new_E_cost
+  \State P[v] = u
+  \State Insert (v, new_E_cost) into Q
+  
+  \EndIf
+  
+  \EndFor
+  \EndWhile
+  
+  \State \textbf{return} Reconstruct_Path(P, s, t)
+  
+  \EndProcedure
+  \State
+  \Procedure{Reconstruct_Path}(P, s, t)
+  \State \textbf{Initialize:} an empty list path p
+  \State current_node $\gets$ t
+  \While{current_node != s}
+  \State Prepend current_node to p
+  \State current_node $\gets$ P[current_node]
+  \State
+  \State Prepend s to p
+  
+  \EndWhile
+  \State \textbf{return} p
+  \EndProcedure
+  
+  
+  \end{algorithmic}
+  \end{algorithm}
 
 
 \section{Outline of Numerical Application on CUDA}
