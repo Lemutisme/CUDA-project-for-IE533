@@ -29,7 +29,7 @@
 \usepackage{algorithm}
 \usepackage{amsmath}
 
-\title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Proposal}
+\title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Midpoint}
 
 % The \author macro works with any number of authors. There are two commands
 % used to separate the names and addresses of multiple authors: \And and \AND.
@@ -275,6 +275,111 @@ shortest path from node j to the terminal node t.
 \subsection{Modified Dijkstra's Algorithm}
 
 
+
+\section{Outline of Numerical Application on CUDA}
+
+
+A. Motivation for using parallel algorithms on CUDA to solve Stochastic Shortest Path problems
+
+Implementing a parallel algorithm for the SSP problem can be challenging due to the need for efficient 
+parallel data structures and handling race conditions. However, when implemented correctly, parallel algorithms 
+can significantly speed up the computation, especially for large graphs.
+
+B. Overview of the algorithmic approach and kernel design
+
+It's possible to develop parallel 
+algorithms for solving the Stochastic Shortest Path (SSP) problem implementing a parallel programming model in 
+CUDA. The most commonly used parallel algorithms for shortest path problems are based on Dijkstra's or Bellman-Ford's 
+algorithms. For the SSP problem, we can adapt these algorithms to work with the discretized stochastic costs.
+
+\subsection{Preprocessing}
+A. Discretization of random costs
+
+1. Conversion of random edge costs into deterministic costs
+2. Assignment of corresponding probabilities to each deterministic cost
+
+B. Preprocessing on the CPU
+
+C. Data partitioning for efficient kernel execution
+
+1. Dividing the graph into subproblems
+2. Assigning subproblems to CUDA thread blocks
+
+\subsection{Data Representation}
+A. Graph representation techniques
+
+1. Adjacency matrix
+2. Adjacency list
+
+B. Compressed Sparse Row (CSR) format
+
+1. Efficient memory usage for large graphs
+2. Compatibility with parallel algorithms
+
+C. GPU data transfer
+
+1. cudaMemcpy for data transfer between CPU and GPU
+2. Asynchronous data transfer for overlapping computation and communication
+
+\subsection{Kernel Design for Parallel Algorithms}
+A. Designing a kernel for parallel Dijkstra's Algorithm
+
+1. Thread assignment for processing nodes and edges
+2. Shared memory usage for priority queue and node data
+
+B. Designing a kernel for parallel Bellman-Ford's Algorithm
+
+1. Thread assignment for processing nodes and edges
+2. Shared memory usage for node data and intermediate results
+
+C. Load balancing and thread cooperation
+
+1. Dynamic thread assignment to minimize idle threads
+2. Thread cooperation for atomic operations and memory access
+
+\subsection{Iteration and Synchronization}
+A. Intra-kernel synchronization
+
+1. Use of syncthreads or thread barriers within a kernel
+2. Ensuring completion of all threads before proceeding
+
+B. Inter-kernel synchronization
+
+1. Use of CUDA events for kernel synchronization
+2. Overlapping kernel execution and data transfer for efficiency
+
+\subsection{Termination Criteria}
+A. No updates to the shortest path estimates
+
+B. Maximum number of iterations reached
+
+C. GPU-based termination checking
+
+1. Reduction-based global termination check
+2. Asynchronous termination check using CUDA streams
+
+\subsection{Path Reconstruction}
+A. Extraction of the shortest path from source to destination node
+
+1. Parallel backtracking on the GPU
+2. Efficient data structures for storing path information
+
+B. CPU-based path reconstruction
+
+1. Transfer of path data from GPU to CPU
+2. Formatting and output of the final path
+
+
+
+\section{Discussion and Evaluation}
+A. Summary of the parallel algorithm implementation on CUDA with efficient kernel design
+
+B. Potential applications and future work in solving Stochastic Shortest Path problems
+
+C. Evaluation of performance improvements and scalability
+\section{Conclusion}
+
+TBD
 
 \begin{comment}
 \section{Submission of papers to NeurIPS 2020}
