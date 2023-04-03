@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.3.21)  3 APR 2023 14:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Homebrew) (preloaded format=pdflatex 2023.3.21)  3 APR 2023 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -443,212 +443,48 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/l3backend/l3b
-ackend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
-\l__pdf_internal_box=\box56
-) (./Midpoint.aux)
-\openout1 = `Midpoint.aux'.
+(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/algorithmicx/
+algpseudocode.sty
+Package: algpseudocode 
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/algorithmicx/
+algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
-* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=430.00462pt
-* \textheight=556.47656pt
-* \oddsidemargin=19.8752pt
-* \evensidemargin=19.8752pt
-* \topmargin=-13.87262pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count299
+\c@ALG@rem=\count300
+\c@ALG@nested=\count301
+\ALG@tlm=\skip64
+\ALG@thistlm=\skip65
+\c@ALG@Lnr=\count302
+\c@ALG@blocknr=\count303
+\c@ALG@storecount=\count304
+\c@ALG@tmpcounter=\count305
+\ALG@tmplength=\skip66
 
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(108.405pt, 397.48499pt, 108.40501pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43pt, 72.27pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=397.48499pt
-* \textheight=650.43pt
-* \oddsidemargin=36.13501pt
-* \evensidemargin=36.13501pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+! LaTeX Error: Command \algorithmic already defined.
+               Or name \end... illegal, see p.192 of the manual.
 
-Package hyperref Info: Link coloring OFF on input line 83.
-(./Midpoint.out) (./Midpoint.out)
-\@outlinefile=\write3
-\openout3 = `Midpoint.out'.
-
-LaTeX Info: Redefining \microtypecontext on input line 83.
-Package microtype Info: Applying patch `item' on input line 83.
-Package microtype Info: Applying patch `toc' on input line 83.
-Package microtype Info: Applying patch `eqnum' on input line 83.
-Package microtype Info: Applying patch `footnote' on input line 83.
-Package microtype Info: Applying patch `verbatim' on input line 83.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 83.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
-
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/microtype/mt-
-ptm.cfg
-File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-)
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/microtype/mt-
-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
-
-
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/amsfonts/umsa
-.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/microtype/mt-
-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
-
-
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/amsfonts/umsb
-.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/microtype/mt-
-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-6.
-
-(/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/tex/latex/base/t1cmtt.f
-d
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [1
-
-
-{/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/map/pdftex/updmap
-/pdftex.map}{/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/enc/d
-vips/base/8r.enc}{/opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/
-enc/dvips/cm-super/cm-super-t1.enc}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-[3
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.227 ... = \arg \min_{p \in P} \mathbb{E}(C_p),\]
-                                                  ]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 272.
-
-! Undefined control sequence.
-<recently read> \State 
-                       
-l.274 \State
-             \textbf{Input:} Graph $G = (V,E)$, source node $s$, sink node $...
-
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112    }
+          %
 ? exit
  
 Here is how much of TeX's memory you used:
- 12232 strings out of 476025
- 198799 string characters out of 5780034
- 1861388 words of memory out of 5000000
- 32381 multiletter control sequences out of 15000+600000
- 539706 words of font info for 132 fonts, out of 8000000 for 9000
+ 11544 strings out of 476025
+ 185221 string characters out of 5780034
+ 1849388 words of memory out of 5000000
+ 31883 multiletter control sequences out of 15000+600000
+ 513931 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,76p,1005b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20230313/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/te
-xlive/20230313/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt
-/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/type1/public/cm-super/
-sftt1000.pfb></opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/fonts/type
-1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20230313/share/texmf-dist/
-fonts/type1/urw/times/utmr8a.pfb>
-Output written on Midpoint.pdf (3 pages, 109260 bytes).
+ 75i,0n,76p,286b,106s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 30785 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
