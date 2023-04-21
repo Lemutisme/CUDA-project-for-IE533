@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.9)  21 APR 2023 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.9)  21 APR 2023 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,31 +326,63 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks33
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count299
+\c@ALG@rem=\count300
+\c@ALG@nested=\count301
+\ALG@tlm=\skip64
+\ALG@thistlm=\skip65
+\c@ALG@Lnr=\count302
+\c@ALG@blocknr=\count303
+\c@ALG@storecount=\count304
+\c@ALG@tmpcounter=\count305
+\ALG@tmplength=\skip66
+
+/usr/local/texlive/2022/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty:112: LaTeX Error: Command \algorithmic already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112    }
+          %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
+\l__color_backend_stack_int=\count306
 \l__pdf_internal_box=\box56
 ) (./Final.aux)
 \openout1 = `Final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -418,23 +450,23 @@ LaTeX Font Info:    ... okay on input line 83.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 84.
 \@outlinefile=\write3
 \openout3 = `Final.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 83.
-Package microtype Info: Applying patch `item' on input line 83.
-Package microtype Info: Applying patch `toc' on input line 83.
-Package microtype Info: Applying patch `eqnum' on input line 83.
-Package microtype Info: Applying patch `footnote' on input line 83.
-Package microtype Info: Applying patch `verbatim' on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 84.
+Package microtype Info: Applying patch `item' on input line 84.
+Package microtype Info: Applying patch `toc' on input line 84.
+Package microtype Info: Applying patch `eqnum' on input line 84.
+Package microtype Info: Applying patch `footnote' on input line 84.
+Package microtype Info: Applying patch `verbatim' on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 83.
+LaTeX Info: Redefining \showhyphens on input line 84.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -443,19 +475,19 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 86.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 87.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
@@ -471,988 +503,319 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 
-LaTeX Warning: Reference `Milestons' on page 3 undefined on input line 190.
+LaTeX Warning: Reference `Milestons' on page 3 undefined on input line 191.
 
 [3
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.227 ... = \arg \min_{p \in P} \mathbb{E}(C_p),\]
+l.228 ... = \arg \min_{p \in P} \mathbb{E}(C_p),\]
                                                   ]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 272.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 273.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:274: Undefined control sequence.
-l.274   \State
-               \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:274: Missing $ inserted.
-<inserted text> 
-                $
-l.274 ...rce node $s$, sink node $t$, discretized_
-                                                  costs $c$, probability dis...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:274: Missing $ inserted.
-<inserted text> 
-                $
-l.274 ...ity distribution function $p:E\rightarrow
-                                                  [0,1]$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:275: Undefined control sequence.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:275: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
 l.275   \State
-               \textbf{Output:} Shortest expected path from $s$ to $t$, min_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+               \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:275: Missing $ inserted.
-<inserted text> 
-                $
-l.275 ...rtest expected path from $s$ to $t$, min_
-                                                  expected_cost
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:275: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.275   \State
+               \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $...
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:276: Undefined control sequence.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:276: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
 l.276   \State
+               \textbf{Output:} Shortest expected path from $s$ to $t$, \tex...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:276: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.276   \State
+               \textbf{Output:} Shortest expected path from $s$ to $t$, \tex...
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 275--276
+ []\T1/ptm/b/n/10 (+20) In-put: \T1/ptm/m/n/10 (+20) Graph $\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 V; E\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 (+20) , source node $\OML/cmm/m/it/10 s$\T1/ptm/m/n/10 (+20) , sink node $\OML/cmm/m/it/10 t$\T1/ptm/m/n/10 (+20) , [] $\OML/cmm/m/it/10 c$\T1/ptm/m/n/10 (+20) ,
+ []
+
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:277: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.277   \State
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:277: Undefined control sequence.
-l.277   \Procedure
-                  {SSP_DP}{$G,s,t,c,p$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:277: Missing } inserted.
-<inserted text> 
-                }
-l.277   \Procedure{SSP_DP}{$
-                            G,s,t,c,p$}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:277: Extra }, or forgotten $.
-<recently read> }
-                 
-l.277   \Procedure{SSP_DP}{$G,s,t,c,p$}
-                                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:278: Undefined control sequence.
-l.278   \State
-               \textbf{Initialization:}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:279: Undefined control sequence.
-l.279   \For
-            {$v \in V$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:279: Missing } inserted.
-<inserted text> 
-                }
-l.279   \For{$
-              v \in V$}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:279: Missing $ inserted.
-<inserted text> 
-                $
-l.279   \For{$v \in
-                    V$}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:279: Extra }, or forgotten \endgroup.
-l.279   \For{$v \in V$}
-                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:280: Undefined control sequence.
-l.280   \State
-               $V(v) \gets None$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:281: Undefined control sequence.
-l.281   \EndFor
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Undefined control sequence.
-l.283   \State
-               \text{min_expected_c} $\gets$ \text{DP_Helper(G, s, t, c, p)}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Missing $ inserted.
-<inserted text> 
-                $
-l.283   \State \text{min_expected_c}
-                                     $\gets$ \text{DP_Helper(G, s, t, c, p)}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.283   \State \text{min_expected_c}
-                                     $\gets$ \text{DP_Helper(G, s, t, c, p)}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Missing $ inserted.
-<inserted text> 
-                $
-l.283   \State \text{min_expected_c} $\gets
-                                           $ \text{DP_Helper(G, s, t, c, p)}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Missing $ inserted.
-<inserted text> 
-                $
-l.283 ...} $\gets$ \text{DP_Helper(G, s, t, c, p)}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:283: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.283 ...} $\gets$ \text{DP_Helper(G, s, t, c, p)}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:284: Undefined control sequence.
-l.284   \State
-               \text{path} $\gets$ \text{Reconstruction_Path(G, s, t, c, p, V)}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:284: Missing $ inserted.
-<inserted text> 
-                $
-l.284   \State \text{path} $\gets
-                                 $ \text{Reconstruction_Path(G, s, t, c, p, V)}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:284: Missing $ inserted.
-<inserted text> 
-                $
-l.284 ...xt{Reconstruction_Path(G, s, t, c, p, V)}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:284: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.284 ...xt{Reconstruction_Path(G, s, t, c, p, V)}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:286: Undefined control sequence.
-l.286   \State
-               \textbf{return} min_expected_c, path
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:287: Undefined control sequence.
-l.287   \EndProcedure
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:288: Undefined control sequence.
-l.288   \State
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:277: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.277   \State
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:289: Undefined control sequence.
-l.289   \Procedure
-                  {DP_Helper}(G, u, t, c, p, V)
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:278: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.278   \Procedure
+                  {SSP\_DP}{$G,s,t,c,p$}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:290: Undefined control sequence.
-l.290   \If
-           {$u == t$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:278: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.278   \Procedure
+                  {SSP\_DP}{$G,s,t,c,p$}
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:290: Missing } inserted.
-<inserted text> 
-                }
-l.290   \If{$
-             u == t$}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:290: Extra }, or forgotten $.
-<recently read> }
-                 
-l.290   \If{$u == t$}
-                     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:291: Undefined control sequence.
-l.291   \State
-               \textbf{return} 0
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:292: Undefined control sequence.
-l.292   \EndIf
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:289: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.289   \State
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:293: Undefined control sequence.
-l.293   \If
-            {$V[u] != None$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:293: Missing } inserted.
-<inserted text> 
-                }
-l.293   \If {$
-              V[u] != None$}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:293: Extra }, or forgotten $.
-<recently read> }
-                 
-l.293   \If {$V[u] != None$}
-                            
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:294: Undefined control sequence.
-l.294   \State
-               \textbf{return} V[u]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:295: Undefined control sequence.
-l.295   \EndIf
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:289: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.289   \State
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:296: Undefined control sequence.
-l.296   \State
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:291: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.291   \Procedure
+                  {DP\_Helper}{G, u, t, c, p, V}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:291: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.291   \Procedure
+                  {DP\_Helper}{G, u, t, c, p, V}
+I'm ignoring this, since I wasn't doing a \csname.
+
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:315: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.315   \State
               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:297: Undefined control sequence.
-l.297   \State
-               \textbf{Initialize:} min_expected_c $\gets \infty$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:315: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.315   \State
+              
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:297: Missing $ inserted.
-<inserted text> 
-                $
-l.297 ...textbf{Initialize:} min_expected_c $\gets
-                                                   \infty$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:316: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.316   \Procedure
+                  {Reconstruct\_Path}{$G, u, t, c, p, V$}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:298: Undefined control sequence.
-l.298   \For
-            {\text{neighbor v of u } $\in G$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:316: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.316   \Procedure
+                  {Reconstruct\_Path}{$G, u, t, c, p, V$}
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:299: Undefined control sequence.
-l.299   \State
-               \text{expected_cost[u][v]} $\gets \sum_{(u,v) \in E}c[u][v]\t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:299: Missing $ inserted.
-<inserted text> 
-                $
-l.299   \State \text{expected_cost[u][v]}
-                                          $\gets \sum_{(u,v) \in E}c[u][v]\t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+ [] [] $\OMS/cmsy/m/n/10   [][] \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 [[]][\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 ^^B
+ []
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:299: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.299   \State \text{expected_cost[u][v]}
-                                          $\gets \sum_{(u,v) \in E}c[u][v]\t...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:330: Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.330   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:299: Missing $ inserted.
-<inserted text> 
-                $
-l.299   \State \text{expected_cost[u][v]} $\gets
-                                                 \sum_{(u,v) \in E}c[u][v]\t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:330: Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.330   \end{algorithmic}
+                         
+I was expecting to see `<', `=', or `>'. Didn't.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Undefined control sequence.
-l.300   \State
-               \text{subproblem_cost} $\gets$ \text{DP_Helper(G, v, t, c, p,...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:330: Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.330   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Missing $ inserted.
-<inserted text> 
-                $
-l.300   \State \text{subproblem_cost}
-                                      $\gets$ \text{DP_Helper(G, v, t, c, p,...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+[4]
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:338: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.338   \State
+               \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.300   \State \text{subproblem_cost}
-                                      $\gets$ \text{DP_Helper(G, v, t, c, p,...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:338: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.338   \State
+               \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $...
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Missing $ inserted.
-<inserted text> 
-                $
-l.300   \State \text{subproblem_cost} $\gets
-                                            $ \text{DP_Helper(G, v, t, c, p,...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:339: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.339   \State
+               \textbf{Output:} Shortest expected path from $s$ to $t$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Missing $ inserted.
-<inserted text> 
-                $
-l.300 ...\gets$ \text{DP_Helper(G, v, t, c, p, V)}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:339: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.339   \State
+               \textbf{Output:} Shortest expected path from $s$ to $t$
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:300: Extra }, or forgotten $.
-\mbox  #1->\leavevmode \hbox {#1}
-                                 
-l.300 ...\gets$ \text{DP_Helper(G, v, t, c, p, V)}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:340: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.340   \State
+              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Undefined control sequence.
-l.301   \State
-               \text{total_expected_cost} $\gets$ expected_cost[u][v] +  \te...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:340: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.340   \State
+              
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:342: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.342   \Procedure
+                  {SSP\_Dijkstra}{$G,s,t,c,p$}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:342: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.342   \Procedure
+                  {SSP\_Dijkstra}{$G,s,t,c,p$}
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:373: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.373   \State
+              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:373: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.373   \State
+              
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:374: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.374   \Procedure
+                  {Reconstruct\_Path}{P, s, t}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:374: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.374   \Procedure
+                  {Reconstruct\_Path}{P, s, t}
+I'm ignoring this, since I wasn't doing a \csname.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:388: Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.388   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:388: Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.388   \end{algorithmic}
+                         
+I was expecting to see `<', `=', or `>'. Didn't.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:388: Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.388   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ [5] [6] [7] [8] (./Final.aux)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: There were undefined references.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.301   \State \text{total_expected_cost}
-                                          $\gets$ expected_cost[u][v] +  \te...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Package rerunfilecheck Warning: File `Final.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301   \State \text{total_expected_cost} $\gets
-                                                $ expected_cost[u][v] +  \te...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301 ...xt{total_expected_cost} $\gets$ expected_
-                                                  cost[u][v] +  \text{subpro...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Missing $ inserted.
-<inserted text> 
-                $
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:301: Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.301 ...cted_cost[u][v] +  \text{subproblem_cost}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:302: Undefined control sequence.
-l.302   \If
-           {total_expected_cost $<$ min_expected_c}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:302: Missing } inserted.
-<inserted text> 
-                }
-l.302   \If{total_expected_cost $
-                                 <$ min_expected_c}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:302: Extra }, or forgotten $.
-l.302 ...f{total_expected_cost $<$ min_expected_c}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Undefined control sequence.
-l.303   \State
-               \text{min_expected_c} $\gets$ total_expected_cost
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Missing $ inserted.
-<inserted text> 
-                $
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Missing $ inserted.
-<inserted text> 
-                $
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303: Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.303   \State \text{min_expected_c}
-                                     $\gets$ total_expected_cost
-(That makes 100 errors; please try again.) 
+Package rerunfilecheck Info: Checksums for `Final.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  AA7391F5B4EC147EE27A0356A788B235;3203.
+ ) 
 Here is how much of TeX's memory you used:
- 12229 strings out of 476024
- 195640 string characters out of 5790019
- 1861388 words of memory out of 5000000
- 32372 multiletter control sequences out of 15000+600000
- 543354 words of font info for 138 fonts, out of 8000000 for 9000
+ 12838 strings out of 476024
+ 204804 string characters out of 5790019
+ 1872388 words of memory out of 5000000
+ 32887 multiletter control sequences out of 15000+600000
+ 554684 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,42n,76p,1067b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,76p,1067b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Final.pdf (8 pages, 182486 bytes).
+PDF statistics:
+ 145 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 45057 words of extra memory for PDF output out of 51595 (max. 10000000)
 
-/Users/claus/Documents/GitHub/CUDA-project-for-IE533/paper/Final/Final.tex:303:  ==> Fatal error occurred, no output PDF file produced!

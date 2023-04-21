@@ -29,6 +29,7 @@
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{amsmath}
+\usepackage{algpseudocode}
 
 \title{GPU-accelerated Algorithms on solving Stochastic Shortest Path Problems\\ Midpoint}
 
@@ -271,22 +272,23 @@ shortest path from node j to the terminal node t.
 \begin{algorithm}[H]
   \caption{Stochastic Shortest Path Using Dynamic Programming}
   \begin{algorithmic}[1]
-  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, discretized_costs $c$, probability distribution function $p:E\rightarrow[0,1]$
-  \State \textbf{Output:} Shortest expected path from $s$ to $t$, min_expected_cost
+  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, \text{discretized\_costs} $c$, \text{probability distribution function} $p$
+  \State \textbf{Output:} Shortest expected path from $s$ to $t$, \text{min\_expected\_cost}
   \State
-  \Procedure{SSP_DP}{$G,s,t,c,p$}
+  \Procedure{SSP\_DP}{$G,s,t,c,p$}
   \State \textbf{Initialization:}
   \For{$v \in V$}
   \State $V(v) \gets None$
   \EndFor
   
-  \State \text{min_expected_c} $\gets$ \text{DP_Helper(G, s, t, c, p)}
-  \State \text{path} $\gets$ \text{Reconstruction_Path(G, s, t, c, p, V)}
+  \State \text{min\_expected\_c} $\gets$ \text{DP\_Helper(G, s, t, c, p)}
+  \State \text{path} $\gets$ \text{Reconstruction\_Path(G, s, t, c, p, V)}
   
-  \State \textbf{return} min_expected_c, path
+  \State \textbf{return} min\_expected\_c, path
   \EndProcedure
   \State
-  \Procedure{DP_Helper}(G, u, t, c, p, V)
+  
+  \Procedure{DP\_Helper}{G, u, t, c, p, V}
   \If{$u == t$}
   \State \textbf{return} 0
   \EndIf
@@ -294,31 +296,33 @@ shortest path from node j to the terminal node t.
   \State \textbf{return} V[u]
   \EndIf
   \State
-  \State \textbf{Initialize:} min_expected_c $\gets \infty$
+  \State \textbf{Initialize:} min\_expected\_c $\gets \infty$
   \For{\text{neighbor v of u } $\in G$}
-  \State \text{expected_cost[u][v]} $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
-  \State \text{subproblem_cost} $\gets$ \text{DP_Helper(G, v, t, c, p, V)}
-  \State \text{total_expected_cost} $\gets$ expected_cost[u][v] +  \text{subproblem_cost}
-  \If{total_expected_cost $<$ min_expected_c}
-  \State \text{min_expected_c} $\gets$ total_expected_cost
+  
+  \State \text{expected\_cost[u][v]} $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
+  \State \text{subproblem\_cost} $\gets$ \text{DP\_Helper(G, v, t, c, p, V)}
+  \State \text{total\_expected\_cost} $\gets$ expected\_cost[u][v] +  \text{subproblem\_cost}
+  \If{total\_expected\_cost $<$ min\_expected\_c}
+  \State \text{min\_expected\_c} $\gets$ \text{total\_expected\_cost}
   \EndIf
   \State
-  \State V[u] $\gets$ min_expected_cost
-  \State \textbf{return} min_expected_cost
+  \State V[u] $\gets$ \text{min\_expected\_cost}
+  \State \textbf{return} \text{min\_expected\_cost}
+  
   \EndFor
   
   \EndProcedure
   \State
-  \Procedure{Reconstruct_Path}(G, u, t, c, p, V):
+  \Procedure{Reconstruct\_Path}{$G, u, t, c, p, V$}
   \State \textbf{Initialize:} an empty path p
-  \State current_node $\gets$ u
+  \State current\_node $\gets$ u
   \State
-  \While{current_node $!=$ t}
-  \For{neighbor v of current_node that minimize the total expected cost}
-  \State \text{expected_cost[\text{current_node}][v]} $\gets \sum_{(\text{current_node},v) \in E}c[\text{current_node}][v]\times p[\text{current_node}][v]$
-  \State \text{total_expected_cost} $\gets$ expected_cost[\text{current_node}][v] + V[v]  
+  \While{current\_node $!=$ t}
+  \For{neighbor v of current\_node that minimize the total expected cost}
+  \State \text{expected\_cost[\text{current\_node}][v]} $\gets \sum_{(\text{current\_node},v) \in E}c[\text{current\_node}][v]\times p[\text{current\_node}][v]$
+  \State \text{total\_expected\_cost} $\gets$ expected\_cost[\text{current\_node}][v] + V[v]  
   \State append v to p
-  \State current_node $\gets$ v
+  \State current\_node $\gets$ v
   \EndFor
   \EndWhile
   \State \textbf{return} p
@@ -329,18 +333,18 @@ shortest path from node j to the terminal node t.
 \subsection{Modified Dijkstra's Algorithm}
 
 \begin{algorithm}[H]
-  \caption{SPP_Dijkstra}
+  \caption{SPP\_Dijkstra}
   \begin{algorithmic}[1]
-  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, discretized_costs $c$, probability distribution function $p:E\rightarrow[0,1]$
+  \State \textbf{Input:} Graph $G=(V,E)$, source node $s$, sink node $t$, discretized\_costs $c$, probability distribution function $p:E\rightarrow[0,1]$
   \State \textbf{Output:} Shortest expected path from $s$ to $t$
   \State
   
-  \Procedure{SSP_Dijkstra}{$G,s,t,c,p$}
-  \State \textbf{Initialize:} an empty priority queue Q, an empty path dictionary P, expected cost array E_costs
-  \For{$v \in $ E_costs}
-  \State E_costs $ \gets \infty$
+  \Procedure{SSP\_Dijkstra}{$G,s,t,c,p$}
+  \State \textbf{Initialize:} an empty priority queue Q, an empty path dictionary P, expected cost array E\_costs
+  \For{$v \in $ E\_costs}
+  \State E\_costs $ \gets \infty$
   \EndFor
-  \State E_costs[s] $\gets$ 0
+  \State E\_costs[s] $\gets$ 0
   \State Insert (s,0) into Q
   \State
   \While{Q is not empty}
@@ -350,29 +354,29 @@ shortest path from node j to the terminal node t.
   \EndIf
   \State
   \For{neighbor v of u in G}
-  \State expected_cost[u][v] $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
-  \State new_E_cost = E_costs[u] + expected_cost[u][v]
+  \State expected\_cost[u][v] $\gets \sum_{(u,v) \in E}c[u][v]\times p[u][v]$
+  \State new\_E\_cost = E\_costs[u] + expected\_cost[u][v]
   
-  \If{new_E_cost $<$ E_costs[v]}
-  \State E_costs[v] = new_E_cost
+  \If{new\_E\_cost $<$ E\_costs[v]}
+  \State E\_costs[v] = new\_E\_cost
   \State P[v] = u
-  \State Insert (v, new_E_cost) into Q
+  \State Insert (v, new\_E\_cost) into Q
   
   \EndIf
   
   \EndFor
   \EndWhile
   
-  \State \textbf{return} Reconstruct_Path(P, s, t)
+  \State \textbf{return} Reconstruct\_Path(P, s, t)
   
   \EndProcedure
   \State
-  \Procedure{Reconstruct_Path}(P, s, t)
+  \Procedure{Reconstruct\_Path}{P, s, t}
   \State \textbf{Initialize:} an empty list path p
-  \State current_node $\gets$ t
-  \While{current_node != s}
-  \State Prepend current_node to p
-  \State current_node $\gets$ P[current_node]
+  \State current\_node $\gets$ t
+  \While{current\_node != s}
+  \State Prepend current\_node to p
+  \State current\_node $\gets$ P[current\_node]
   \State
   \State Prepend s to p
   
