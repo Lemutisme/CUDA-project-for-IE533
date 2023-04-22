@@ -1,10 +1,12 @@
 Cuda Floyd Warshall implementation
-===========================
+==================================
+
 CUDA implementation of the Blocked Floyd-Warshall All pairs shortest path graph algorithm
 based on article:
 "A Multi-Stage CUDA Kernel for Floyd-Warshall" (Ben Lund, Justin W. Smith)
 
 #### Tested:
+
 <table style="width:100%; border:0px" >
  <td>
   <b>Hardware (MSI GP72 7RE):</b>
@@ -23,7 +25,6 @@ based on article:
   </ol>
  </td>
 </table>
-
 
 #### Performance results:
 
@@ -52,6 +53,7 @@ based on article:
 </table>
 
 #### Compile source:
+
 <ol>
   <li>Install make/nvcc</li>
   <li>Update makefile with path to nvcc compiler</li>
@@ -59,6 +61,7 @@ based on article:
 </ol>
 
 #### Run tests:
+
 <ol>
   <li>Install Python 3.6</li>
   <li>Go to project directory</li>
