@@ -1,7 +1,4 @@
 /* Main
- *
- * Author: Matuesz Bojanowski
- *  Email: bojanowski.mateusz@gmail.com
  */
 #include <iostream>
 #include <string>
