@@ -7,10 +7,15 @@
 #include <algorithm>
 #include <chrono>
 #include <unistd.h>
-#include "lib/apsp.h"
+#include <fstream>
+#include <iomanip>
+#include <sstream>
+#include <sys/stat.h>
+#include "lib/ssp.h"
 
 using namespace std;
 using namespace std::chrono;
+
 
 /**
  * Print help for command line parameters
@@ -57,13 +62,10 @@ graphAPSPAlgorithm parseCommand(int argc, char** argv) {
 
 /**
  * Read data from input
- *
- * @param: max value for edges in input graph
- * @result: unique ptr to graph data with allocated fields
  */
 unique_ptr<graphAPSPTopology> readData(int maxValue) {
     int nvertex, nedges;
-    int v1, v2, value;
+    int v1, v2, mean, sigma, value;
     cin >> nvertex >> nedges;
 
     /* Init data graph */
@@ -72,55 +74,69 @@ unique_ptr<graphAPSPTopology> readData(int maxValue) {
     fill_n(data->pred.get(), nvertex * nvertex, -1);
     fill_n(data->graph.get(), nvertex * nvertex, maxValue);
 
-    /* Load data from  standard input */
-    for (int i=0; i < nedges; ++i) {
-        cin >> v1 >> v2 >> value;
+    /* Load data from standard input */
+    for (int i = 0; i < nedges; ++i) {
+        cin >> v1 >> v2 >> mean >> sigma;
+        value = mean + 3 * sigma;
         data->graph[v1 * nvertex + v2] = value;
         data->pred[v1 * nvertex + v2] = v1;
     }
 
     /* Path from vertex v to vertex v is 0 */
-    for (unsigned int i=0; i < nvertex; ++i) {
+    for (unsigned int i = 0; i < nvertex; ++i) {
         data->graph[i * nvertex + i] = 0;
         data->pred[i * nvertex + i] = -1;
     }
     return data;
 }
 
-/**
- * Print data graph (graph matrix, prep) and time
- *
- * @param graph: pointer to graph data
- * @param time: time in seconds
- * @param max: maximum value in graph path
- */
-void printDataJson(const unique_ptr<graphAPSPTopology>& graph, int time, int maxValue) {
-    // Lambda function for printMatrix -1 means no path
-    ios::sync_with_stdio(false);
-    auto printMatrix = [](unique_ptr<int []>& graph, int n, int max) {
-        cout << "[";
+
+
+void saveMatrixJson(const string& filename, const unique_ptr<int[]>& matrix, int n, int max) {
+    ofstream file(filename);
+    if (file.is_open()) {
+        file << "[";
         for (int i = 0; i < n; ++i) {
-            cout << "[";
+            file << "[";
             for (int j = 0; j < n; ++j) {
-                if (max > graph[i * n + j])
-                    cout << graph[i * n + j];
+                if (max > matrix[i * n + j])
+                    file << matrix[i * n + j];
                 else
-                    cout << -1 ;
-                if (j != n - 1) cout << ",";
+                    file << -1;
+                if (j != n - 1) file << ",";
             }
             if (i != n - 1)
-                cout << "],\n";
+                file << "],\n";
             else
-                cout << "]";
+                file << "]";
         }
-        cout << "],\n";
-    };
+        file << "]";
+        file.close();
+    } else {
+        cerr << "Unable to open file: " << filename << endl;
+    }
+}
 
-    cout << "{\n    \"graph\":\n";
-    printMatrix(graph->graph, graph->nvertex, maxValue);
-    cout << "    \"predecessors\": \n";
-    printMatrix(graph->pred, graph->nvertex, maxValue);
-    cout << "    \"compute_time\": " << time << "\n}";
+string getCurrentDateTime() {
+    auto now = system_clock::now();
+    auto in_time_t = system_clock::to_time_t(now);
+    auto in_tm = *localtime(&in_time_t);
+    ostringstream oss;
+    oss << put_time(&in_tm, "%Y%m%d_%H%M%S");
+    return oss.str();
+}
+
+void saveDataJson(const unique_ptr<graphAPSPTopology>& graph, int maxValue) {
+    string datetime = getCurrentDateTime();
+    string log_path = "./log/";
+    string folder_name = log_path + datetime + "_nvertex_" + to_string(graph->nvertex);
+    mkdir(folder_name.c_str(), 0777);
+
+    string graph_file = folder_name + "/graph.json";
+    string predecessors_file = folder_name + "/predecessors.json";
+
+    saveMatrixJson(graph_file, graph->graph, graph->nvertex, maxValue);
+    saveMatrixJson(predecessors_file, graph->pred, graph->nvertex, maxValue);
 }
 
 int main(int argc, char **argv) {
@@ -133,8 +149,11 @@ int main(int argc, char **argv) {
     apsp(graph, algorithm);
     high_resolution_clock::time_point stop = high_resolution_clock::now();
 
-    /* Print graph */
-    auto duration = duration_cast<milliseconds>( stop - start ).count();
-    printDataJson(graph, duration, maxValue);
+    /* Save graph and predecessors */
+    saveDataJson(graph, maxValue);
+
+    /* Print computation time */
+    auto duration = duration_cast<milliseconds>(stop - start).count();
+    cout << "Compute time: " << duration << " ms" << endl;
     return 0;
 }

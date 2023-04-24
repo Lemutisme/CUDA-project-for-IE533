@@ -1,72 +1,46 @@
-Cuda Floyd Warshall implementation
-==================================
+Cuda Based Robust SSP Problem
+=============================
 
-CUDA implementation of the Blocked Floyd-Warshall All pairs shortest path graph algorithm
-based on article:
-"A Multi-Stage CUDA Kernel for Floyd-Warshall" (Ben Lund, Justin W. Smith)
+## Environment:
 
-#### Tested:
+1. System: WSL 2 Ubuntu 20.04.5 LTS
+2. CPU: Intel(R) Core(TM) i5-12600KF
+3. GPU: nVIDIA(R) RTX 3070 8GB RAM
+4. RAM: 32GB
+5. NVCC: V10.1.243
+6. CC:  9.4.0
+7. Driver: 531.41
+8. CUDA: 12.1
 
-<table style="width:100%; border:0px" >
- <td>
-  <b>Hardware (MSI GP72 7RE):</b>
-  <ol>
-   <li>Processor: Intel(R) Core(TM) i7-7700HQ</li>
-   <li>GPU: GTX 1050 Ti 2GB RAM</li>
-   <li>RAM: 8GB RAM</li>
-  </ol> 
- </td>
- <td>
-  <b>Environment:</b>
-  <ol>
-   <li>System: Ubuntu 17.10</li>
-   <li>NVCC: 9.1</li>
-   <li>CC: 6.1</li>
-  </ol>
- </td>
-</table>
+## Data Explanation
 
-#### Performance results:
+#### Data Instance:
 
-<table>
- <tr>
-   <th>|V|</th><th>|E|</th><th>fw.cpp</th><th> fw-cuda.cu </th><th>Speedup</th><th> blocked-fw-cuda.cu </th><th>Speedup</th>
- </tr>
- <tr>
-  <td> 1000</td><td> 150000 </td><td> 0.724s</td><td> 0.176s </td><td> 4.215x</td></td><td> 0.117s</td><td> 6.188x</td>
- </tr>
- <tr>
-   <td> 2000</td><td> 400000 </td><td> 5.895s</td><td> 0.642s </td><td> 9.182x</td></td><td> 0.213s</td><td> 27.67x</td>
- </tr>
- <tr>
-   <td> 5000</td><td> 500000</td><td> 84.91s</td><td> 8.406s </td><td> 10.10x</td></td><td> 2.301s</td><td> 36.90x</td>
- </tr>
- <tr>
-   <td> 7500</td><td> 1125000</td><td> 279.0s</td><td> 28.31s </td><td> 9.855x</td></td><td> 7.550s</td><td> 36.95x</td>
- </tr>
- <tr>
-   <td> 10000</td><td> 2000000</td><td> 665.9s</td><td> 63.81s </td><td> 10.43x</td></td><td> 17.28s</td><td> 38.53x</td>
- </tr>
- <tr>
-   <td> 12500</td><td> 3125000</td><td> 1269s</td><td> 125.5s</td><td> 10.11x</td></td><td> 34.03s</td><td> 37.27x</td>
- </tr>
-</table>
+```
+1000 # First Row: Number of Vertices
+150000 # Second Row: Number of Edges
+838 618 890 17.290661902827246 
+981 611 944 10.019387690812502 
+7 340 904 3.526561274367449 
+367 323 762 3.3557391727453547 
+```
 
-#### Compile source:
+* First Column: Departure Vertex;
+* Second Column: Arrival Vertex;
 
-<ol>
-  <li>Install make/nvcc</li>
-  <li>Update makefile with path to nvcc compiler</li>
-  <li>Run command: make all</li>
-</ol>
+Here, every edges follows a Normal Distribution $\mathcal{N}(\mu,\sigma)$$)$
 
-#### Run tests:
+* Third Column: $\mu$;
+* Fourth Column: $\sigma$.
 
-<ol>
-  <li>Install Python 3.6</li>
-  <li>Go to project directory</li>
-  <li>Run command: python3 -m unittest discover -s test -v</li>
-</ol>
+## Performance results:
 
-<hr/>
-<b>Author: Mateusz Bojanowski</b>
+![Comp](./image/output2.png)
+
+![A beautiful sunset](./image/output3.png)
+
+## Compile source:
+
+* Install make/nvcc
+* Update makefile with path to nvcc compiler
+* `make all`

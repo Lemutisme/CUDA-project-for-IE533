@@ -7,22 +7,22 @@ CPPFLAGS= -O3 -std=c++11
 # Define paths
 OBJS := \
 ./main.o \
-./lib/cuda/cuda_apsp.o \
-./lib/apsp.o
+./lib/cuda/cuda_ssp.o \
+./lib/ssp.o
 
 CPP_SRCS := \
 main.cpp \
-lib/apsp.cpp
+lib/ssp.cpp
 
 CPP_DEPS := \
 ./main.d \
-./lib/apsp.d
+./lib/ssp.d
 
 CU_SRCS := \
-lib/cuda/cuda_apsp.cu
+lib/cuda/cuda_ssp.cu
 
 CU_DEPS := \
-./lib/cuda/cuda_apsp.d
+./lib/cuda/cuda_ssp.d
 
 
 # Build cpp files in root folder
@@ -51,13 +51,13 @@ lib/%.o: lib/%.cpp
 
 
 # All Target
-all: cuda_floyd-warshall
+all: stochastic_shortest_path
 
-cuda_floyd-warshall: $(OBJS) $(USER_OBJS)
+stochastic_shortest_path: $(OBJS) $(USER_OBJS)
 	@echo 'Linker building target: $@'
-	$(NVCC) --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "cuda_floyd-warshall" $(OBJS) $(USER_OBJS) $(LIBS)
+	$(NVCC) --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "stochastic_shortest_path" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 
 clean:
-	-rm -fr $(OBJS) $(CU_DEPS) $(CPP_DEPS) cuda_floyd-warshall
+	-rm -fr $(OBJS) $(CU_DEPS) $(CPP_DEPS) stochastic_shortest_path
 	-@echo ' '
