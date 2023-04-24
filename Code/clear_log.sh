@@ -7,7 +7,8 @@ read -p "Type 'y' to confirm: " confirm
 # Check user confirmation
 if [ "$confirm" == "y" ]; then
   # Remove all files in ./log directory
-  rm -f ./log/*
+  rm -rf ./log/**
+
 
   # Output success message
   echo "All files in ./log directory have been deleted."
