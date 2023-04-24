@@ -28,7 +28,7 @@ Cuda Based Robust SSP Problem
 * First Column: Departure Vertex;
 * Second Column: Arrival Vertex;
 
-Here, every edges follows a Normal Distribution $\mathcal{N}(\mu,\sigma)$$)$
+Here, every edges follows a Normal Distribution $\mathcal{N}(\mu,\sigma)$$
 
 * Third Column: $\mu$;
 * Fourth Column: $\sigma$.
