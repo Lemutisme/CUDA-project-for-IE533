@@ -27,11 +27,12 @@ Cuda Based Robust SSP Problem
 
 ## Data Explanation
 
-#### Data Instance:
+#### Data Instance
 
 ```
 1000 # First Row: Number of Vertices
 150000 # Second Row: Number of Edges
+
 838 618 890 17.290661902827246 
 981 611 944 10.019387690812502 
 7 340 904 3.526561274367449 
@@ -58,7 +59,7 @@ Here, cost values of each edges follows a Normal Distribution $\mathcal{N}(\mu,\
 
 ![](./image/output4.png)
 
-![](https://vscode-remote+ssh-002dremote-002blogin-002edelta-002encsa-002eillinois-002eedu.vscode-resource.vscode-cdn.net/u/dzhou2/Project/CUDA-project-for-IE533/image/output3.png)
+![](./image/output5.png)
 
 ## Compile source:
 
