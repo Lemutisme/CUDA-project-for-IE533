@@ -201,7 +201,7 @@ We can solve the above problem with standard LP solvers if the expected costs ar
 \begin{equation}\label{SSPIP}
         \min_x \max_{r \in S}\sum_{(i,j) \in E} c_{ij}^r x_{ij}
     \end{equation}
-where $S$ is the uncertainty set of costs $[\underline{c}_{ij},\overline{c}_{ij}]$ on each edge.
+where $S$ is the uncertainty set of costs $\{\underline{c}_{ij},...,\overline{c}_{ij}\}$ on each edge.
 
 \section{Methodology}
 Due to the combinatorial nature of the problem and randomness of the cost variables, solving the SSP problem can
