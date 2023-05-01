@@ -157,7 +157,9 @@ and Sparse Parallel Value Iteration (SPVI), which takes advantage of embedded gr
 performance on more advanced embedded systems [8]. Steimle et al. developed exact and fast approximation methods with error bounds 
 for Multi-model Markov decision process (MMDP), which generates a single policy maximizing performance over all models. 
 This approach allows the decision maker to trade-off conflicting data sources while creating a policy of the same complexity 
-for models that consider only one data source [9].
+for models that consider only one data source [9]. 
+
+Robust optimization provides an alternative method to stochastic optimization for handling uncertainty. In this approach, the elements which are uncertain are assumed to belong to uncertainty sets instead of explicit distributions, as is the case in stochastic programming. Soyster [13] provides this robust optimization framework which can be considered optimization for the worst case scenario. This approach can be too conservative. Bertsimas and Sim [14] propose a method to handle this by considering flexible levels of protection against uncertainty.
 
 \section{Proposed work}
 
@@ -220,14 +222,18 @@ It is important to choose the appropriate method or algorithm for the specific p
 carefully analyze the results to ensure that the solution is accurate and effective. 
 
 \section{Problem Description}
-The Stochastic Shortest Path (SSP) problem is an extension of the classical shortest path problem, where the cost of traversing edges is uncertain and modeled as random variables. In the SSP, we aim to find a path with the minimum expected total cost from a source node to a destination node in a directed graph. To formulate this problem, we define a few notations.
+The Stochastic Shortest Path (SSP) problem is an extension of the classical shortest path problem, 
+where the cost of traversing edges is uncertain and modeled as random variables. 
+In the SSP, we aim to find a path with the minimum expected total cost from a source node to a destination node in a directed graph. 
+To formulate this problem, we define a few notations.
 
-Let $G=(V,E)$ be the graph containing a set of vertices $V$ and a set of edges $E$. Let $s \in V$ and $t \in V$ be the source and sink nodes. Let the set of paths from $s$ to $t$ be $P$. The costs of traversing edge $(i,j) \in E$ is given by the random variable $c_{ij}$. Let the probability distribution function of $c_{ij}$ be $f_{ij}(c_{ij})$. We assume the costs are non-negative and independent. 
+Let $G=(V,E)$ be the graph containing a set of vertices $V$ and a set of edges $E$. Let $s \in V$ and $t \in V$ be the source and sink nodes. 
+Let the set of paths from $s$ to $t$ be $P$. The costs of traversing edge $(i,j) \in E$ is given by the random variable $c_{ij}$. Let the probability distribution function of $c_{ij}$ be $f_{ij}(c_{ij})$. We assume the costs are non-negative and independent. 
 
 We seek to find the least expected cost path from $s$ to $t$:
 \[p^* = \arg \min_{p \in P} \mathbb{E}(C_p),\] 
 where \[\mathbb{E}(C_p) = \sum_{(i,j) \in p}\mathbb{E} (c_{ij})= \sum_{(i,j) \in p} \int_{0}^\infty c_{ij} f_{ij}(c_{ij}) \, dc_{ij}.\]
-We can discretize the cost parameter to approximate the integration term of the expected cost. Let there be N possible values of $c_{ij} \forall (i,j) \in E$ given by $\{ c_{ij}^1, c_{ij}^2, ..., c_{ij}^N\}$ with corresponding probabilities $\{ p_{ij}^1, p_{ij}^2, ..., p_{ij}^N\}$. The discretization can be done by methods like scenario generation or Monte Carlo sampling. The strength of the solution depends on how fine the discretization is but
+We can discretize the cost parameter to approximate the integration term of the expected cost. Let there be N possible values of $c_{ij} \forall (i,j) \in E$ given by $\{ c_{ij}^1, c_{ij}^2, ..., c_{ij}^N\}$ with corresponding probabilities $\{ p_{ij}^1, p_{ij}^2, ..., p_{ij}^N\}$. The discretization can be done by methods like scenario generation or Monte Carlo sampling. The strength of the solution depends on how fine the discretization is but finer discretizations can be time consuming to solve.
 
 \subsection{Network Flow Representation}
 
@@ -743,7 +749,7 @@ achieve this.
   \url{http://www.emfield.org/icuwb2010/downloads/IEEE-PDF-SpecV32.pdf}
 
 \item \verb+xfig+ "patterned" shapes are implemented with bitmap fonts.  Use
-  "solid" shapes instead.
+s  "solid" shapes instead.
 
 \item The \verb+\bbold+ package almost always uses bitmap fonts.  You should use
   the equivalent AMS Fonts:
@@ -844,5 +850,10 @@ Do {\bf not} include this section in the anonymized submission, only in the fina
   a new GPU-based approach to the shortest path problem. {\it International Journal of Parallel Programming} {\bf 43}(5), 918-938.
 
 [12] Jóhannsson, Á.Þ.\ (2009). GPU-based Markov decision process solver.
+
+[13] Soyster, A. L. (1973). Convex programming with set-inclusive constraints and applications to inexact linear programming. 
+{\it Operations research} {\bf 21}(5): 1154-1157.
+
+[14] Bertsimas, D., & Sim, M. (2004). The price of robustness. {\it Operations research}, {\bf 52}(1), 35-53.
 
 \end{document}
