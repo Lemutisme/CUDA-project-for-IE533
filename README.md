@@ -16,7 +16,7 @@ Cuda Based Robust SSP Problem
 
 ### Server
 
-1. System: Red Hat 8.5.0-10WSL 2 Ubuntu 20.04.5 L
+1. System: Red Hat 8.5.0-10
 2. CPU: AMD EPYC 7763 64-Core Processor
 3. GPU: NVIDIA A40 48GB RAM
 4. RAM: 256GB
@@ -49,17 +49,15 @@ Here, cost values of each edges follows a Normal Distribution $\mathcal{N}(\mu,\
 
 ## Performance results
 
-### Local Workstation
+### Local Workstation VS Server
 
 ![](./image/output2.png)
 
-![](./image/output3.png)
+![](https://vscode-remote+ssh-002dremote-002blogin-002edelta-002encsa-002eillinois-002eedu.vscode-resource.vscode-cdn.net/u/dzhou2/Project/CUDA-project-for-IE533/image/output4.png)
 
 ### Server
 
-![](./image/output4.png)
-
-![](./image/output5.png)
+![](https://vscode-remote+ssh-002dremote-002blogin-002edelta-002encsa-002eillinois-002eedu.vscode-resource.vscode-cdn.net/u/dzhou2/Project/CUDA-project-for-IE533/image/output3.png)![](./image/output5.png)
 
 ## Compile source:
 
