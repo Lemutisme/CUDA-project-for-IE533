@@ -59,7 +59,11 @@ Here, cost values of each edges follows a Normal Distribution $\mathcal{N}(\mu,\
 
 ![](https://vscode-remote+ssh-002dremote-002blogin-002edelta-002encsa-002eillinois-002eedu.vscode-resource.vscode-cdn.net/u/dzhou2/Project/CUDA-project-for-IE533/image/output3.png)![](./image/output5.png)
 
-## Compile source:
+## Guide for users
+
+All processes, including makefile, setup path, data processing, algorithm run result field storage, and visualization are integrated in 'Code/SSP.ipynb'.
+
+### Compile source:
 
 * Install make/nvcc
 * Update makefile with path to nvcc compiler
